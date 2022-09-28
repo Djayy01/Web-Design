@@ -6,7 +6,7 @@
  }
  nav {
    font-family: "Times New Roman", Times, serif;
-   font-size: 18px;
+   font-size: 22px;
 }
 body {
    background: -webkit-linear-gradient(top, #405B63, #52A3A0, #618894, #6AB4B1, #779BA6);
@@ -22,7 +22,7 @@ section {
 
 }
 footer {
-   background-color: #C28D5B;
+   background-color: #C8976A;
    font-family: "Times New Roman", Times, serif;
    font-size: 15px;
    border-color: #482B09;
@@ -30,15 +30,39 @@ footer {
    border-style: solid;
 }
 div.special {
-   background-color: #C28D5B;
+   background-color: #CDA279;
    font-family: "Times New Roman", Times, serif;
+   font-size: 18px;
+   border-color: #482B09;
+   border-width: small;
+   border-style: solid;
+}
+section.special2 {
+   background-color: #CDA279;
+   font-family: "Lucida Handwriting", "Lucida Grande", sans-serif;
    font-size: 15px;
    border-color: #482B09;
    border-width: small;
    border-style: solid;
 }
+div.special2 {
+   background-color: #CDA279;
+   font-family: "Lucida Handwriting", "Lucida Grande", sans-serif;
+   font-size: 15px;
+   border-color: #482B09;
+   border-width: small;
+   border-style: solid;
+}
+div.special3 {
+   background-color: #F2C091;
+   font-family: "Arial Black", Gadget, sans-serif;
+   font-size: 15px;
+   border-color: #482B09;
+   border-width: small;
+   border-style: solid;
+} 
 div {
-   background-color: #C28D5B;
+   background-color: #C8976A;
 }
 h1 {
    font-family: "Lucida Handwriting", "Lucida Grande", sans-serif;
@@ -47,7 +71,7 @@ h1 {
 }
 h2 {
    font-family: "Lucida Handwriting", "Lucida Grande", serif;
-   font-size: 28px;
+   font-size: 29px;
    color: #fff;
 }
 h3 {
@@ -60,3 +84,12 @@ h4, h5, h6 {
    font-size: 22px;
    color: black;
 }
+a:link {
+   color: black;
+ }
+ a:visited {
+   color: #fa33e6;
+ }
+ a:hover {
+   color: #6d6d6d;
+ }
