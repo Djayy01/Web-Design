@@ -1,0 +1,20 @@
+article.center {
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 13px;
+ } 
+ img{
+    float: left;
+ }
