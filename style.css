@@ -3,39 +3,43 @@
     border-color: #482B09;
     border-width: medium;
     border-style: solid;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
  }
  nav {
    font-family: "Times New Roman", Times, serif;
    font-size: 22px;
 }
 body {
-   background: -webkit-linear-gradient(top, #405B63, #52A3A0, #618894, #6AB4B1, #779BA6);
+   background: -webkit-linear-gradient(top, #405B63, #52A3A0, #618894, #6AB4B1, #779BA6)
 }
+
 section {
-   background-color: #F2C091;
+   background-color:whitesmoke;
    font-family: "Times New Roman", Times, serif;
    font-size: 18px;
    border-color: #482B09;
    border-width: medium;
    border-style: solid;
-   padding: 20px;
-
+   padding: 18px;
+   margin-left: 20px;
+   margin-right: 20px;
 }
 footer {
-   background-color: #C8976A;
+   background-color: white;
    font-family: "Times New Roman", Times, serif;
    font-size: 15px;
    border-color: #482B09;
    border-width: medium;
    border-style: solid;
+   margin-left: 20px;
+   margin-right: 20px;
 }
-div.special {
-   background-color: #CDA279;
+.modified{
+   background-color: white;
    font-family: "Times New Roman", Times, serif;
-   font-size: 18px;
-   border-color: #482B09;
-   border-width: medium;
-   border-style: solid;
+   font-size: 15px;
 }
 section.special2 {
    background-color: #CDA279;
@@ -54,7 +58,7 @@ div.special2 {
    border-style: solid;
 }
 div.special3 {
-   background-color: #F2C091;
+   background-color: whitesmoke;
    font-family: "Arial Black", Gadget, sans-serif;
    font-size: 15px;
    border-color: #482B09;
@@ -72,7 +76,7 @@ h1 {
 h2 {
    font-family: "Lucida Handwriting", "Lucida Grande", serif;
    font-size: 29px;
-   color: #fff;
+   color: black;
 }
 h3 {
    font-family: "Times New Roman", Times, serif;

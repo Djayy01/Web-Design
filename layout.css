@@ -18,3 +18,28 @@ article.center {
  img{
     float: left;
  }
+
+ .topnav {
+    position: sticky;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: whitesmoke;
+    color:#6d6d6d;
+  }
+  
+  .topnav a.active {
+    background-color: whitesmoke;
+    color: blue;
+  }
