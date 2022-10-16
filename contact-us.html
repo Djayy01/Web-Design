@@ -9,6 +9,7 @@
       <title>Contact Us</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" type="text/css" href="layout.css">
+      <link rel="stylesheet" type="text/css" href="w3.css">
       <style>
         table {
           background-color: lightgray;
@@ -40,95 +41,99 @@
         </p>
         <fieldset>
           <legend>Contact Us</legend>
-          <h3>Personal Information</h3>
-          <form id="ContactPage" action="mailto:djasoo@yahoo.com" method="post" >
+          <form class="w3-container w3-card-4 w3-light-grey">
+            <h2>Reason for contacting us</h2>
+          
+            <select class="w3-select" name="option">
+              <option value="" disabled selected>Select your reason</option>
+                <option value="1">Booking</option>
+                <option value="2">Media Interview Request</option>
+                <option value="3">Fan Mail</option>
+                <option value="4">Support</option>
+                <option value="5">Other</option>
+            </select>
+          
             <p>
-              <label title="Select your reason.">Reason for contacting us</label>
-                <select name="reasonID">
-                  <option value="reasonID">&larr;&nbsp;Select your reason for contact&nbsp;&rarr;</option>
-                  <option value="1">Booking</option>
-                  <option value="2">Media Interview Request</option>
-                  <option value="3">Fan Mail</option>
-                  <option value="4">Support</option>
-                  <option value="5">Other</option>
-                </select>
+              <button class="w3-btn w3-black">Register</button>
+            </p>
+            
+            <h2>Personal Information</h2>
+            <p>
+              <label title="Enter your first name.">First Name</label>
+              <input class="w3-input w3-border w3-round-large" name="first name" type="text">
             </p>
             <p>
-              <label title="Enter your first name.">First Name <input type="text" name="First Name" placeholder="First Name"></label>
+              <label title="Enter your last name.">Last Name</label>
+              <input class="w3-input w3-border w3-round-large" name="last name" type="text">
             </p>
             <p>
-              <label title="Enter your last name.">Last Name <input type="text" name="Last Name" placeholder="Last Name"></label>
+              <label title="Enter your E-mail.">E-mail</label>
+              <input class="w3-input w3-border w3-round-large" name="e-mail" type="text">
+            </p>
+            <h2>Message</h2>
+            <p>
+              <input class="w3-radio" type="radio" name="request" value="question">
+              <label>Question</label>
             </p>
             <p>
-              <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
-            </p>
-            <h3>Message</h3>
-            <p>
-              <label title="Select if you have a question.">Question <input type="radio" name="request"></label>
-              <br>
-              <label title="Select if you have a comment.">Comment <input type="radio" name="request"></label>
+              <input class="w3-radio" type="radio" name="request" value="comment">
+              <label>Comment</label>
             </p>
             <p>
               <label for="message">How can we help you?</label><br>
               <textarea id="message" name="message"></textarea>
             </p>
-            <h3>Preferred Contact Method</h3>
+            <h2>Preferred Contact Method</h2>
             <p>
-              <label title="By E-mail"><input type="checkbox" name="emailcontact"> E-mail</label>
-            </p>
+              <input class="w3-check" type="checkbox">
+              <label> E-mail</label></p>
             <p>
-              <label title="By Phone"><input type="checkbox" name="phonecontact"> Phone Number</label>
+              <input class="w3-check" type="checkbox">
+              <label> Phone Number</label>
               <label title="Enter your phone number.">   (charges may apply) <input type="text" name="Phone Number" placeholder="Phone Number"></label>
             </p>
-            <h4>Sign Up For Our Newsletter</h4>
-            <p>
-              <label title="Agreement"><input type="checkbox" name="agreementnewsletter"> Yes I'd like to receive the weekly newsletter.</label>
+             <p>
+               <input type="submit" name="submit" value="Submit">
+               <input type="reset" value="Reset">
             </p>
-            <input type="submit" name="submit" value="Submit">
-            <input type="reset" value="Reset">
           </form>
         </fieldset>
       </section>
       <section class="regular">
-        <h2>Tour Dates</h2>
-        <table>
-            <caption>Son Of A Sailor Tour 2022</caption>
+        <div class="w3-container">
+          <h2>Tour Dates</h2>
+          <table class="w3-table-all w3-hoverable">
+            <caption>Son Of A Sailor Tour 2022
+            </caption>
             <thead>
-                <tr>
-                  <th scope="col" abbr="Column 1" id="col1">Purchase Below</th>
-                  <th scope="col" abbr="Column 2" id="col2">Location</th>
-                  <th scope="col" abbr="Column 3" id="col3">Date</th>
-                  <th scope="col" abbr="Column 4" id="col4">Venue</th>
-                </tr>
-              </thead>
-            <tbody>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Buy Tickets</th>
-                      <td headers="col2">Jacksonville, FL</td>
-                      <td headers="col3">09/28/22</td>
-                      <td headers="col4">Dos Equis Pavilion</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Buy Tickets</th>
-                      <td headers="col2">West Palm Beach, FL</td>
-                      <td headers="col3">09/30/22</td>
-                      <td headers="col4">Mercedes-Benz Stadium</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Buy Tickets</th>
-                        <td headers="col2">Fort Lauderdale, FL</td>
-                        <td headers="col3">10/01/22</td>
-                        <td headers="col4">T Mobile Dome</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Buy Tickets</th>
-                        <td headers="col2">Miami, FL</td>
-                        <td headers="col3">10/02/22</td>
-                        <td headers="col4">Hard Rock Stadium</td>
-                      </tr>
-            </tbody>
+              <tr class="w3-light-grey">
+                <th>Location</th>
+                <th>Date</th>
+                <th>Venue</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Jacksonville, FL</td>
+              <td>	09/28/22	</td>
+              <td>	Dos Equis Pavilion</td>
+            </tr>
+            <tr>
+              <td>West Palm Beach, FL</td>
+              <td>	09/30/22  </td>
+              <td>Mercedes-Benz Stadium</td>
+            </tr>
+            <tr>
+              <td>Fort Lauderdale, FL</td>
+              <td>  10/01/22  </td>
+              <td>	T Mobile Dome</td>
+            </tr>
+            <tr>
+              <td>Miami, FL</td>
+              <td>	10/02/22  </td>
+              <td>	Hard Rock Stadium</td>
+            </tr>
           </table>
+        </div>      
       </section>
    </body>
 </html>
