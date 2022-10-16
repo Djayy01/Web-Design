@@ -1,45 +1,72 @@
+section.gallery {
+  position: relative;
+  width: 100%;
+}
 article.center {
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    height: 400px;
-    width: 400px;
-    margin: 10px;
-    padding: 10px;
-    border-color: black;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 25px;
-    background-color: whitesmoke;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 13px;
+  float: left;
+  box-sizing: border-box;
+  width: 600px;
+  margin: 10px;
+  padding: 5px;
+  border-color: black;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 25px;
+  background-color: whitesmoke;
  } 
- img{
-    float: left;
- }
+article.center h3 {
+  padding: 20px 10vw 30px;
+  text-align: center;
+}
+article.center > p {
+  margin: 30px 60px;
+  background-color: lightgray;
+}
+figure {
+  float: left;
+  margin: 2vh;
+}
+article:nth-child(even) > figure {
+  float: right;
+}
+figure img {
+  display:block;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption {
+  text-align: center;
+  clear: both;
+  color: black;
+  font-size: 15px;
+}
 
- .topnav {
-    position: sticky;
-    background-color: black;
-    overflow: hidden;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: whitesmoke;
-    color:#6d6d6d;
-  }
-  
-  .topnav a.active {
-    background-color: whitesmoke;
-    color: blue;
-  }
+.topnav {
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: whitesmoke;
+  color:#6d6d6d;
+}
+.topnav a.active {
+  background-color: whitesmoke;
+  color: blue;
+}

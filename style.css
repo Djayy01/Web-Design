@@ -7,15 +7,10 @@
     margin-left: 20px;
     margin-right: 20px;
  }
- nav {
-   font-family: "Times New Roman", Times, serif;
-   font-size: 22px;
-}
 body {
    background: -webkit-linear-gradient(top, #405B63, #52A3A0, #618894, #6AB4B1, #779BA6)
 }
-
-section {
+section.regular {
    background-color:whitesmoke;
    font-family: "Times New Roman", Times, serif;
    font-size: 18px;
