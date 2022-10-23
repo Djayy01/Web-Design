@@ -10,9 +10,48 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" type="text/css" href="layout.css">
       <link rel="stylesheet" type="text/css" href="w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+        background-image: url('/w3images/parallax1.jpg');
+        min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+        }
+
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+           background-attachment: scroll;
+           min-height: 400px;
+        }
+        }
+     </style>
    </head>
    <body>
-      <header>
+      <header id="home">
          <h1>Frequently Asked Questions</h1>
       </header>
       <nav class="topnav">
@@ -20,14 +59,13 @@
         <a class="active" href="faq.html">FAQ</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact-us.html">Contact Us</a>
+        <a href="about-us.html">About Us</a>
       </nav>
         <main>
             <section class="regular">
-                <div class="special2">
                     <h2>FAQ'S</h2>
-                </div>
-                <div class="special3">
-                    <ol>
+                <div class="w3-container">
+                    <ol class="w3-ul w3-card" style="width:50%">
                         <li><A href="#question1">What is Jimmy Buffet's real name?</A></li>
                         <li><A href="#question2">Where was Jimmy Buffet born?</A></li>
                         <li><A href="#question3">What is Jimmy Buffet's date of birth?</A></li>
@@ -37,40 +75,72 @@
                         <li><A href="#question7">What awards has Jimmy Buffet won?</A></li>
                         <li><A href="#question8">What charities has Jimmy Buffet donted to?</A></li>
                     </ol>
-                    <dl>
-                        <dt><A id="question1">What is Jimmy Buffet's real name?</A></dt>
-                        <dd>His real name is James William Buffett.</dd>
-
-                        <dt><A id="question2">Where was Jimmy Buffet born?</A></dt>
-                        <dd>He was born in Pascagoula, Mississippi.</dd>
-
-                        <dt><A id="question3">What is Jimmy Buffet's date of birth?</A></dt>
-                        <dd>His date of birth is December 25, 1946.</dd>
-
-                        <dt><A id="question4">What style of music does Jimmy Buffet make?</A></dt>
-                        <dd>He refers to his genre of Music as “Gulf and Western”.</dd>
-
-                        <dt><A id="question5">Where does Jimmy Buffet currently reside?</A></dt>
-                        <dd>He currently lives in Key West, Florida, U.S., but also has other home in different states.</dd>
-
-                        <dt><A id="question6">How many albums has Jimmy Buffet released?</A></dt>
-                        <dd>He has released 29 studio albums, 9 compilation albums, 14 live albums, 8 specialty albums, and 67 singles over the last 52 years.</dd>
-
-                        <dt><A id="question7">What awards has Jimmy Buffet won?</A></dt>
-                        <dd>He has won 2 ACM awards but has been nominated for various awards in the music industry.</dd>
-
-                        <dt><A id="question8">What charities has Jimmy Buffet donted to?</A></dt>
-                        <dd>Saving the Manatee Club, Singing for Change, and Last Mango Boatworks are some of the notables charities he has supported.</dd>
-                    </dl>
                 </div>
-                <div class="special2">
-                    <h2>Contact</h2>
-                </div>
-                <footer class="modified">
-                        <h3><A id="email" href="mailto:fakeemail@dcccd.edu">Webmaster</A></h3>
-                        <h3><a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank">Website</a></h3>
-                </footer>
+                <dl style="background:whitesmoke; border:solid 1px black;
+                padding:28px ; width:828px; margin-left: 16px; margin-top: 20px;">
+                    <dt><A id="question1">What is Jimmy Buffet's real name?</A></dt>
+                    <dd>His real name is James William Buffett.</dd>
+
+                    <dt><A id="question2">Where was Jimmy Buffet born?</A></dt>
+                    <dd>He was born in Pascagoula, Mississippi.</dd>
+
+                    <dt><A id="question3">What is Jimmy Buffet's date of birth?</A></dt>
+                    <dd>His date of birth is December 25, 1946.</dd>
+
+                    <dt><A id="question4">What style of music does Jimmy Buffet make?</A></dt>
+                    <dd>He refers to his genre of Music as “Gulf and Western”.</dd>
+
+                    <dt><A id="question5">Where does Jimmy Buffet currently reside?</A></dt>
+                    <dd>He currently lives in Key West, Florida, U.S., but also has other home in different states.</dd>
+
+                    <dt><A id="question6">How many albums has Jimmy Buffet released?</A></dt>
+                    <dd>He has released 29 studio albums, 9 compilation albums, 14 live albums, 8 specialty albums, and 67 singles over the last 52 years.</dd>
+
+                    <dt><A id="question7">What awards has Jimmy Buffet won?</A></dt>
+                    <dd>He has won 2 ACM awards but has been nominated for various awards in the music industry.</dd>
+
+                    <dt><A id="question8">What charities has Jimmy Buffet donted to?</A></dt>
+                    <dd>Saving the Manatee Club, Singing for Change, and Last Mango Boatworks are some of the notables charities he has supported.</dd>
+                </dl>
+            </section>
+            <section class="regular">
+                <h2>Contact</h2>
+                <h3><A id="email" href="mailto:fakeemail@dcccd.edu">Webmaster</A></h3>
+                <h3><a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank">Website</a></h3>
             </section>
         </main>
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"  style = "background-color: black;">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section"  style = "background-color: black;">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+              <i class="fa fa-instagram w3-hover-opacity"></i>
+              <i class="fa fa-snapchat w3-hover-opacity"></i>
+              <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+              <i class="fa fa-twitter w3-hover-opacity"></i>
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+          </footer>
+        <script>
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+    
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
     </body>
     </html>
